@@ -1,0 +1,25 @@
+Table,Field,Description,,,,,,,,,,,,,
+Products,Product_ID,Product ID,,,,,,,,,,,,,
+Products,Product_Name,Product name,,,,,,,,,,,,,
+Products,Product_Category,Product Category,,,,,,,,,,,,,
+Products,Product_Cost,Product cost ($USD),,,,,,,,,,,,,
+Products,Product_Price,Product retail price ($USD),,,,Product,,,,,Inventory,,,,
+Inventory,Store_ID,Store ID,,,,Product_ID,,,,,Store_ID,,,,
+Inventory,Product_ID,Product ID,,,,Product_Name,,,,,Product_ID,,,,
+Inventory,Stock_On_Hand,Stock quantity of the product in the store (inventory),,,,Product_Category,,,,,Stock_On_Hand,,,,
+Stores,Store_ID,Store ID,,,,Product_Cost,,,,,,,,,
+Stores,Store_Name,Store name,,,,Product_Price,,,,,,,,,
+Stores,Store_City,City in Mexico where the store is located,,,,,,,,,,,,,
+Stores,Store_Location,Location in the city where the store is located,,,,,,,,,,,,,
+Stores,Store_Open_Date,Date when the store was opened,,,,,,,,,,,,,
+Sales,Sale_ID,Sale ID,,,,,,,,,,,,,Stores
+Sales,Date,Date of the transaction,,,,,,,,,,,,,Store_ID
+Sales,Store_ID,Store ID,,,,,,,,,,,,,Store_Name
+Sales,Product_ID,Product ID,,,,,,,,,,,,,Store_City
+Sales,Units,Units sold,,,,,,,,,,,,,Store_Location
+Calendar,Date,Calendar date,,,,,,Sales,,,,,,,Store_Open_Date
+,,,,Calendar,,Date,,Sale_ID,,,,,,,
+,,,,Date,,,,Date,,,,,,,
+,,,,,,,,Store_ID,,,,,,,
+,,,,,,,,Product_ID,,,,,,,
+,,,,,,,,Units,,,,,,,
